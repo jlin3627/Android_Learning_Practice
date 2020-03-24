@@ -14,74 +14,81 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
     <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@android:color/darker_gray">
-        <LinearLayout
-            xmlns:android="http://schemas.android.com/apk/res/android"
-            android:orientation="horizontal"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@android:color/darker_gray"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@android:color/darker_gray">
+            android:background="@android:color/darker_gray"
+            android:orientation="horizontal">
 
             <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#4CAF50"
                 android:text="VIP List"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="#4CAF50"
                 android:textSize="24sp" />
 
             <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#4CAF50"
                 android:text="Kunal"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="#4CAF50"
                 android:textSize="24sp" />
 
             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#4CAF50"
                 android:text="Kagure"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="#4CAF50"
                 android:textSize="24sp" />
 
             <TextView
-                android:text="Lyla"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="#4CAF50"
+                android:text="Lyla"
                 android:textSize="24sp" />
 
         </LinearLayout>
+
         <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#4CAF50"
             android:text="VIP List"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#4CAF50"
             android:textSize="24sp" />
 
         <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#4CAF50"
             android:text="Kunal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#4CAF50"
             android:textSize="24sp" />
 
         <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#4CAF50"
             android:text="Kagure"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="#4CAF50"
             android:textSize="24sp" />
 
         <TextView
-            android:text="Lyla"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="#4CAF50"
+            android:text="Lyla"
             android:textSize="24sp" />
 
     </LinearLayout>
