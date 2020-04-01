@@ -17,14 +17,18 @@ package com.google.googleio;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
+import android.widget.FrameLayout;
 import android.widget.RelativeLayout;
+import android.view.View.OnTouchListener;
 
 public class MainActivity extends Activity
 {
     private Button _btnMenu;       // Menu button
     private RelativeLayout  _rlMenu; // Relative layout Menu
+    private FrameLayout     _frame_main_layout;  //Main Layout
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -38,8 +42,6 @@ public class MainActivity extends Activity
     {
         _btnMenu   = findViewById(R.id.btnMenu);
         _rlMenu    = findViewById(R.id.MenuActivity);
-
-
     }
 
     private void setupClick()
@@ -56,7 +58,6 @@ public class MainActivity extends Activity
                 //Method 2: Set the menu visible and use include in layout xml
                 // Problem: layout will be overlay by other contents
                 _rlMenu.setVisibility(View.VISIBLE);
-
                 //Method 3: create new
                 //This will show in center
                 //MenuActivity2 MenuLayout = new MenuActivity2(MainActivity.this);

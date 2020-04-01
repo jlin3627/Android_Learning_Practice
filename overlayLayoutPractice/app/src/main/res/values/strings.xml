@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">RE:sonance</string>
+    <string name="res_btnMenu">Menu</string>
+    <string name="res_btnHideMenu">Hide</string>
+    <string name="res_cover_text">Unlimited Blade Works</string>
+    <string name="res_btnReturn">Return</string>
+</resources>

@@ -10,8 +10,6 @@
     app:layout_editor_absoluteY="80dp"
     tools:layout_editor_absoluteX="0dp"
     tools:layout_editor_absoluteY="80dp">
-
-
     <ImageView
         android:src="@drawable/singapore"
         android:layout_width="0dp"
@@ -242,7 +240,6 @@
         android:text="Menu"
         app:layout_constraintBaseline_toBaselineOf="@+id/discard"
         app:layout_constraintStart_toStartOf="parent" />
-
     <include
         layout="@layout/side_menu_layout"
         android:visibility="invisible"
