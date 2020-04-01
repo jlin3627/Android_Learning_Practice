@@ -11,6 +11,7 @@
     tools:layout_editor_absoluteX="0dp"
     tools:layout_editor_absoluteY="80dp">
 
+
     <ImageView
         android:src="@drawable/singapore"
         android:layout_width="0dp"
@@ -232,5 +233,19 @@
         app:layout_constraintBottom_toTopOf="@+id/discard"
         android:layout_marginBottom="8dp"
         tools:layout_constraintBottom_creator="1" />
+
+    <Button
+        android:id="@+id/btnMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Menu"
+        app:layout_constraintBaseline_toBaselineOf="@+id/discard"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <include
+        layout="@layout/side_menu_layout"
+        android:visibility="invisible"
+        />
 
 </android.support.constraint.ConstraintLayout>

@@ -64,60 +64,66 @@
         android:id="@+id/subtitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:elevation="19dp"
         android:text="@string/singapore"
         android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@+id/header"
         app:layout_editor_absoluteX="16dp"
         app:layout_editor_absoluteY="160dp"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="160dp" />
+        tools:layout_editor_absoluteX="16dp" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
         android:labelFor="@+id/cameraEdit"
         android:text="@string/camera"
+        app:layout_constraintBaseline_toBaselineOf="@+id/cameraEdit"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_editor_absoluteX="16dp"
-        app:layout_editor_absoluteY="208dp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="207dp" />
+        app:layout_editor_absoluteY="208dp" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
         android:labelFor="@+id/settingsEdit"
         android:text="@string/settings"
+        app:layout_constraintBaseline_toBaselineOf="@+id/settingsEdit"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_editor_absoluteX="16dp"
-        app:layout_editor_absoluteY="256dp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="255dp" />
+        app:layout_editor_absoluteY="256dp" />
 
     <EditText
         android:id="@+id/cameraEdit"
         android:layout_width="214dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="48dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="@string/camera_value"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/header"
         app:layout_editor_absoluteX="80dp"
-        app:layout_editor_absoluteY="195dp"
-        tools:layout_editor_absoluteX="80dp"
-        tools:layout_editor_absoluteY="194dp" />
+        app:layout_editor_absoluteY="195dp" />
 
     <EditText
         android:id="@+id/settingsEdit"
         android:layout_width="214dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="@string/camera_settings"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/cameraEdit"
         app:layout_editor_absoluteX="80dp"
-        app:layout_editor_absoluteY="248dp"
-        tools:layout_editor_absoluteX="80dp"
-        tools:layout_editor_absoluteY="247dp" />
+        app:layout_editor_absoluteY="248dp" />
 
     <Button
         android:id="@+id/button"
@@ -156,8 +162,9 @@
         android:layout_width="409dp"
         android:layout_height="378dp"
         android:text="@string/singapore_description"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="293dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settingsEdit" />
 
 
 </android.support.constraint.ConstraintLayout>

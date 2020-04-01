@@ -15,13 +15,53 @@
 package com.google.googleio;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.RelativeLayout;
 
-public class MainActivity extends Activity {
-
+public class MainActivity extends Activity
+{
+    private Button _btnMenu;       // Menu button
+    private RelativeLayout  _rlMenu; // Relative layout Menu
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_done);
+        viewDidLoad();
+        setupClick();
+    }
+
+    private void viewDidLoad()
+    {
+        _btnMenu   = findViewById(R.id.btnMenu);
+        _rlMenu    = findViewById(R.id.MenuActivity);
+
+
+    }
+
+    private void setupClick()
+    {
+        _btnMenu.setOnClickListener(new View.OnClickListener()
+        {
+            public void onClick(View view)
+            {
+                //Method 1: create new intent activity
+                // Problem: the layout will be a new screen covering the whole screen
+                //Intent myIntent = new Intent(view.getContext(), MenuActivity.class);
+                //startActivityForResult(myIntent, 0);
+
+                //Method 2: Set the menu visible and use include in layout xml
+                // Problem: layout will be overlay by other contents
+                _rlMenu.setVisibility(View.VISIBLE);
+
+                //Method 3: create new
+                //This will show in center
+                //MenuActivity2 MenuLayout = new MenuActivity2(MainActivity.this);
+                //MenuLayout.show();
+            }
+        });
     }
 }
